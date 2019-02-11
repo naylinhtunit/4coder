@@ -68,7 +68,7 @@
                 <h3 class="box-title">Write Post Content
                     <small>Simple and fast</small>
                 </h3>
-                <textarea name="body" class="textarea" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">@yield('EditBody')</textarea>
+                <textarea name="body" id="editor1" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">@yield('EditBody')</textarea>
                 @if($errors->has('body'))
                   @foreach($errors->get('body') as $error)
                     <label class="text-danger">{{$error}}</label>
@@ -108,7 +108,9 @@
   <!-- AdminLTE App -->
   <script src="{{asset('admin/dist/js/adminlte.min.js')}}"></script>
   <!-- AdminLTE for Text Editor -->
-  <script src="{{asset('admin/dist/js/textedit.js')}}"></script>
+  {{-- <script src="{{asset('admin/dist/js/textedit.js')}}"></script> --}}
+  {{-- <script src="{{asset('admin/bower_components/ckeditor/ckeditor.js')}}"></script> --}}
+  <script src="//cdn.ckeditor.com/4.11.2/full/ckeditor.js"></script>
   <!-- Bootstrap WYSIHTML5 -->
   <script src="{{asset('admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script>
   <!-- Selected -->
@@ -116,6 +118,7 @@
   <script>
     $(function () {
       $('.select2').select2()
+      CKEDITOR.replace('editor1')
   })
   </script>
 @endsection

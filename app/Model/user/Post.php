@@ -10,8 +10,14 @@ class Post extends Model
     {
         return $this->belongsToMany('App\Model\user\tag','post_tags')->withTimestamps();
     }
+
     public function categories()
     {
         return $this->belongsToMany('App\Model\user\category','category_posts')->withTimestamps();
+    }
+    // Admin post show to home page
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }

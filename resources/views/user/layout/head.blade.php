@@ -3,7 +3,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>4Coder</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('user/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -15,3 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{{asset('user/css/clean-blog.min.css')}}" rel="stylesheet">
+
+    @section('common-css')
+        
+    @show

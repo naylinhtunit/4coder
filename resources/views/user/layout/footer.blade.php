@@ -29,7 +29,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+            <p class="copyright text-muted">Copyright &copy; <b>4Coder Studio.</b> All rights reserved in 2019.</p>
           </div>
         </div>
       </div>

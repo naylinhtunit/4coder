@@ -16,7 +16,7 @@
         {{-- Create Finished Category show and Selected --}}
         @foreach($categories as $category)  
         <option value="{{$category->id}}">{{$category->name}}</option>
-        @endforeachgit config --global core.editor vim
+        @endforeach
     </select>
 </div>
 @endsection
